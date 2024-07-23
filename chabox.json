@@ -1,0 +1,27 @@
+{
+    "version": "1.3.10",
+    "description": "Chatbox is a desktop app for GPT/LLM",
+    "homepage": "https://github.com/Bin-Huang/chatbox",
+    "license": "AGPL-3.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Bin-Huang/chatbox/releases/download/v1.3.10/Chatbox-1.3.10-Setup.exe",     
+            "hash": "SHA256:0bce1e1472b8523a2e08ea72f2d9eba9bceb1c5683e302128a03c08803b41871"
+        }
+    },
+    "bin": "Chatbox.exe",
+    "shortcuts": [
+        [
+            "Chatbox.exe",
+            "Chatbox"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Bin-Huang/chatbox/releases/download/v$version/Chatbox-$version-Setup.zip"
+            }
+        }
+    }
+}
